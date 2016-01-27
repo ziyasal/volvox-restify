@@ -2,7 +2,7 @@ import chai from "chai";
 import sinon from "sinon";
 
 import request from 'request';
-import {RestifyProvider} from "../src/index";
+import RestifyProvider from "../src/index";
 
 import restify from 'restify';
 
