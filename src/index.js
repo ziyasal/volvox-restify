@@ -1,5 +1,3 @@
 import RestifyProvider from './restify-provider';
 
-export {
-    RestifyProvider
-};
+export default RestifyProvider;
