@@ -1,5 +1,5 @@
 # microphone-restify
-![](https://avatars3.githubusercontent.com/u/16361502?v=3&s=200)  ![](/restify/node-restify/raw/gh-images/logo/png/restify_logo_black_transp_288x288.png?raw=true)  
+![](https://avatars3.githubusercontent.com/u/16361502?v=3&s=200)  ![](https://github.com/restify/node-restify/raw/gh-images/logo/png/restify_logo_black_transp_288x288.png?raw=true)  
 
 Restify.js provider for microphone.js Microservice framework
 
