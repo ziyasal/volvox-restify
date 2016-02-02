@@ -1,6 +1,6 @@
 {
   "name": "microphone-restify",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Restify.js provider for microphone.js Microservice framework",
   "main": "lib/index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "microphone-core": "^1.0.2",
+    "microphone-core": "^1.1.0",
     "restify": "^4.0.3"
   },
   "devDependencies": {

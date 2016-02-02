@@ -53,7 +53,7 @@ describe("RestifyProvider:", () => {
             configurationMock.expects("getPort").returns(port).once();
             loggerMock.expects("info").withArgs(`Example app listening on port ${port}!`).once();
 
-            let serverInstance = await restifyProvider.start(server, "test-svc", "v1");
+            let result = await restifyProvider.start(server, "test-svc", "v1");
 
             request(`http://localhost:${port}/status`, (error, response, body)=> {
 
@@ -61,7 +61,7 @@ describe("RestifyProvider:", () => {
 
                 body.should.be.equal(statusResponse);
 
-                serverInstance.close();
+                result.serverInstance.close();
                 done();
             });
         }
