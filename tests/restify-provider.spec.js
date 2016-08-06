@@ -1,8 +1,8 @@
 import chai from "chai";
-import sinon from "sinon";
+import sinon from 'sinon';
 
 import request from 'request';
-import RestifyProvider from "../src/index";
+import RestifyProvider from '../src/restify-provider';
 
 import restify from 'restify';
 
@@ -48,7 +48,7 @@ describe("RestifyProvider:", () => {
         });
 
         async function startTest(server, done) {
-            let port = 3000, statusResponse = 'ok';
+            let port = 3005, statusResponse = 'ok';
 
             configurationMock.expects("getPort").returns(port).once();
             loggerMock.expects("info").withArgs(`Example app listening on port ${port}!`).once();

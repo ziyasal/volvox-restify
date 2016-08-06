@@ -1,7 +1,6 @@
-import {FrameworkProvider} from 'microphone-core'
+import {FrameworkProvider} from 'volvox-core'
 
 import restify from 'restify';
-import StatusController from './status'
 
 /**
  *
@@ -32,15 +31,19 @@ export default class RestifyProvider extends FrameworkProvider {
         var port = this._configuration.getPort() || 8080;
         let uri = `http://localhost:${port}`;
 
-        return new Promise((resolve, reject)=> {
+        return new Promise((resolve, reject) => {
 
-            app.get('/status', StatusController.respond);
+            app.get('/status', (req, res, next) =>{
+                res.setHeader('content-type', 'text/plain');
+                res.send(200, 'ok');
+                next();
+            });
 
             app.listen(port, (err) => {
                 if (err) return reject(err);
 
                 this._logger.info(`Example app listening on port ${port}!`);
-                resolve({serverInstance: app, uri: uri});
+                resolve({ serverInstance: app, uri: uri });
             });
         });
     }
