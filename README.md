@@ -3,7 +3,7 @@
 
 Restify.js provider for volvox.js Microservice framework
 
-[![Build Status](https://travis-ci.org/volvoxjs/volvox-restify.svg?branch=master)](https://travis-ci.org/volvoxjs/volvox-restify) [![Coverage Status](https://coveralls.io/repos/github/microphonejs/microphone-restify/badge.svg?branch=master)](https://coveralls.io/github/microphonejs/microphone-restify?branch=master)
+[![Build Status](https://travis-ci.org/volvoxjs/volvox-restify.svg?branch=master)](https://travis-ci.org/volvoxjs/volvox-restify) [![Coverage Status](https://coveralls.io/repos/github/volvoxjs/volvox-restify/badge.svg?branch=master)](https://coveralls.io/github/volvoxjs/volvox-restify?branch=master)
 
 Preview
 ==========
